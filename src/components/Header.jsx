@@ -86,7 +86,7 @@ const Header = () => {
                                 >
                                     <img className='ss:hidden' src="/img/menu.svg" alt="" />
                                 </IconButton>
-                                <div className='flex hidden ss:flex text-[16px] text-[#000000] w-[350px] justify-between'>
+                                <div className='hidden ss:flex text-[16px] text-[#000000] w-[350px] justify-between'>
                                     <a href='#'>категории</a>
                                     <a href='#'>отзывы</a>
                                     <a href='#'>свяжитесь с нами</a>
@@ -139,24 +139,18 @@ const Header = () => {
                     </Main>
                 </Box>
             </div>
-            <div className='hidden max-w-[1740px] m-auto md:block'>
 
-                <div>
+            <div className='relative hidden md:block'>
+                <div className='forLinks'>
+                    <div className='headImg max-w-[1200px] m-auto flex justify-between items-center h-[60px] w-full px-5 py-2'>
 
-                    <div className='flex justify-between items-center h-[60px] w-full bg-[#000] px-5'>
+                        <img className='w-[100px]' src="/img/logoYellow.png" alt="" />
 
-                        <div className='flex justify-between items-center '>
-                            <div className='flex justify-between items-center text-[#fff] lg:w-[150px]'>
-                                <img src="/img/telegram.svg" alt="" />
-                                <p className='hidden lg:block'>starfitmagazin</p>
-                            </div>
-                            <div className='flex justify-between items-center text-[#fff] ml-[10px] lg:w-[250px] lg:ml-[30px]'>
-                                <img src="/img/mail.svg" alt="" />
-                                <p className='hidden lg:block'>starfit.shop77@gmail.com</p>
-                            </div>
+                        <div className='flex text-[16px] text-[#fff] w-[360px] justify-between'>
+                            <a href='#'>наши товары</a>
+                            <a href='#'>отзывы</a>
+                            <a href='#'>свяжитесь с нами</a>
                         </div>
-
-                        <h3 className='italicText text-[#fff]'>доставка бесплатно</h3>
 
                         <div className='flex justify-between items-center '>
                             <button className='bg-[#FFCD00] px-3 py-1 text-[#fff] rounded-[14px]'>заказать</button>
@@ -166,24 +160,8 @@ const Header = () => {
                                 <img src="/img/ruLang.svg" alt="" />
                             </div>
                         </div>
-
-                    </div>
-
-                    <div className='forLinks'>
-                        <div className='flex text-[16px] text-[#fff] w-[360px] justify-between'>
-                            <a href='#'>наши товары</a>
-                            <a href='#'>отзывы</a>
-                            <a href='#'>свяжитесь с нами</a>
-                        </div>
-                    </div>
-
-                    <div className='forLogo'>
-                        <img src="/img/logoYellow.png" alt="" />
-                        <div className='forTriangle'></div>
                     </div>
                 </div>
-
-
             </div>
         </>
 

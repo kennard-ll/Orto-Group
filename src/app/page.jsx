@@ -1,35 +1,39 @@
 "use client"
-import SwiperComp from "@/components/SwiperComp";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
-// import required modules
 import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import SwipeElem from '@/components/SwipeElem';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="mt-[50px] mb-[50px] text-center">
-      {/* <SwiperComp /> */}
-      <Swiper
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
+    <div className='bgImg xl:flex items-center'>
 
-    </main>
+      <Image
+        quality={100}
+        fill
+        style={{
+          objectFit: 'cover',
+        }}
+        sizes="(max-height: 808px) 50vw, 100vw"
+        src={'/img/blurred-cardio-machines.jpg'}
+      />
+
+      <div className='forSwiper'>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide><SwipeElem /></SwiperSlide>
+          <SwiperSlide><SwipeElem /></SwiperSlide>
+          <SwiperSlide><SwipeElem /></SwiperSlide>
+        </Swiper>
+      </div>
+    </div>
+
   )
 }

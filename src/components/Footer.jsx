@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <>
-            <footer className="max-w-[1080px] w-[90%] m-auto ss:flex items-center justify-between md:mt-[30px]">
+            <footer className="max-w-[1080px] w-[90%] m-auto ss:flex items-center justify-between md:mt-[50px] mb-[30px]">
                 <div>
                     <h3 className="font-semibold">Адрес</h3>
                     <div className="flex items-center mt-[20px]">
@@ -49,9 +49,6 @@ const Footer = () => {
                 </div>
 
             </footer>
-            <div className="w-full border-t-[2px] border-[#858585] text-center mt-[20px] py-4">
-                <p className="text-[12px] w-[60%] m-auto">Все права защищены © 2022 by Сухроб Равшанов</p>
-            </div>
         </>
     );
 };
