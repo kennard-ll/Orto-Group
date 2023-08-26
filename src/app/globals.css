@@ -8,15 +8,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.italicText {
-    font-style: italic;
-}
-
-.italicWeight {
-    font-style: italic;
-    font-weight: 300;
-}
-
 .swiper {
     width: 100%;
     height: 100%;
@@ -31,7 +22,6 @@
 
 .bgImg {
     width: 100%;
-    height: 100vh;
     background-image: url(/public/img/backCorrector.png);
     background-size: cover;
     background-position: center;
@@ -40,7 +30,7 @@
 
 .forSwiper {
     width: 100%;
-    height: 420px;
+    height: fit-content;
 }
 
 .forLinks {
@@ -67,7 +57,7 @@
     margin-top: 10px;
 }
 
-.swiper-pagination-bullet-active-main {
+.swiper-pagination-bullet-active {
     background: #FFCD00;
     width: 10px;
     height: 10px;
